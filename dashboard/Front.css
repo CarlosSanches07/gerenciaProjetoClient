@@ -1,0 +1,71 @@
+body, html {
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+}
+header {
+    height: 10%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom: 1px solid black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkgray;
+}
+.container {
+    height: 81%;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: column;
+    align-items: center;
+    background-color: darkseagreen;
+}
+.container-projeto {
+    background-color: dimgray;
+    height: 75%;
+    width: 70%;
+    align-items: center;
+    display: flex;
+}
+footer {
+    height: 9%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkgray;
+    border-top: 1px solid black;
+}
+button {
+    border-radius: 50px;
+    background-color: lightcoral;
+    border: 1px solid white;
+    width: 30px;
+    height: 30px;
+}
+.label-logoff {
+    width: 40%;
+    padding-right: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+.label-projeto {
+    width: 70%;
+    height: 10%; 
+    display: flex;
+    justify-content: flex-start;
+}
+.label-titulo {
+    width: 69%;
+    display: flex;
+    justify-content: flex-end;
+}
+.label-add {
+    width: 70%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 15px 0px;
+}

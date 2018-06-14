@@ -1,0 +1,51 @@
+body, html {
+    padding: 0px;
+    margin: 0px;
+    height: 100%;
+}
+header {
+    height: 10%;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom: 1px solid black;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkgray;
+}
+.container {
+    height: 81%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkseagreen;
+}
+.container-fazendo {
+    background-color: dimgray;
+    height: 90%;
+    width: 30%;
+    display: flex;
+}
+.container-fazer {
+    background-color: blue;
+    height: 90%;
+    width: 30%;
+    display: flex;
+}
+.container-concluido {
+    background-color: yellow;
+    height: 90%;
+    width: 30%;
+    display: flex;
+}
+footer {
+    height: 9%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: darkgray;
+    border-top: 1px solid black;
+}
