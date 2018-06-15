@@ -69,3 +69,15 @@ button {
     justify-content: flex-end;
     margin: 15px 0px;
 }
+
+.projeto {
+    width: 25%;
+    height: 40%;
+    background-color: aqua;
+    margin: 0px 5px; 
+}
+
+.projeto > .projeto-dado{
+    color: blueviolet;
+    pointer-events: none;
+}
