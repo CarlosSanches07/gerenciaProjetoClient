@@ -67,3 +67,14 @@ input {
     margin: 5% 0%;
     height: 20px;
 }
+.label-logoff {
+    width: 40%;
+    padding-right: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+.label-titulo {
+    width: 69%;
+    display: flex;
+    justify-content: flex-end;
+}

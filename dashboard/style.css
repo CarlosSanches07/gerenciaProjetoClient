@@ -46,17 +46,17 @@ button {
     width: 30px;
     height: 30px;
 }
-.label-logoff {
-    width: 40%;
-    padding-right: 15px;
-    display: flex;
-    justify-content: flex-end;
-}
 .label-projeto {
     width: 70%;
     height: 10%; 
     display: flex;
     justify-content: flex-start;
+}
+.label-logoff {
+    width: 40%;
+    padding-right: 15px;
+    display: flex;
+    justify-content: flex-end;
 }
 .label-titulo {
     width: 69%;

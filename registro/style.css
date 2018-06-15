@@ -66,3 +66,14 @@ input {
 h4 {
     margin: 0.5%;
 }
+.label-logoff {
+    width: 40%;
+    padding-right: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+.label-titulo {
+    width: 69%;
+    display: flex;
+    justify-content: flex-end;
+}

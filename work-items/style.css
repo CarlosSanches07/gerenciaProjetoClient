@@ -2,6 +2,7 @@ body, html {
     padding: 0px;
     margin: 0px;
     height: 100%;
+    background-color: darkseagreen ;
 }
 header {
     height: 10%;
@@ -20,24 +21,24 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: darkseagreen;
+    background-color: darkseagreen ;
 }
 .container-fazendo {
-    background-color: dimgray;
-    height: 90%;
-    width: 30%;
+    background-color: red;
+    height: 75%;
+    width: 26%;
     display: flex;
 }
 .container-fazer {
-    background-color: blue;
-    height: 90%;
-    width: 30%;
+    background-color: yellow;
+    height: 75%;
+    width: 26%;
     display: flex;
 }
 .container-concluido {
-    background-color: yellow;
-    height: 90%;
-    width: 30%;
+    background-color: green;
+    height: 75%;
+    width: 26%;
     display: flex;
 }
 footer {
@@ -48,4 +49,15 @@ footer {
     align-items: center;
     background-color: darkgray;
     border-top: 1px solid black;
+}
+.label-logoff {
+    width: 40%;
+    padding-right: 15px;
+    display: flex;
+    justify-content: flex-end;
+}
+.label-titulo {
+    width: 69%;
+    display: flex;
+    justify-content: flex-end;
 }
