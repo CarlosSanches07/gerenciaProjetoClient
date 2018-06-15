@@ -1,35 +1,37 @@
-const btnLogin = document.getElementById('login-button');
+window.onload = function () {
 
-const doLogin = function () {
-    const login = document.getElementById('login').value;
-    const password = document.getElementById('password').value;
-    const user = {
-        'Login': login,
-        'Password': password
-    }
-    const url = 'http://localhost:8010/user/login';
-    const body =  {
-        user : user
-    }
-    const headers = {
-        'Accept': 'application/json',
-        'Content-Type': 'application/json'
-    }
-    fetch(url, {
-        method: 'POST',
-        headers: headers,
-        body: body
-    })
-    .then(res => res.json())
-    .then((data) => {
-        if(!data.data) {
-            alert('login invalido');
-            return;
+    const botaoLogin = document.getElementById('login-button');
+
+    const doLogin = function () {
+        const login = document.getElementById('login').value;
+        const password = document.getElementById('password').value;
+        const user = {
+            'Login': login,
+            'Senha': password
         }
-        localStorage.setItem('usuario', data);
-        alert(data);
-    })
-    .catch(err => console.log(err));
-}
+        const url = 'http://localhost:8010/user/login';
 
-btnLogin.addEventListener('click', doLogin);
+        fetch(url, {
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            method: 'POST',
+            body: JSON.stringify({user: user})
+        })
+            .then(res => res.json())
+            .then((data) => {
+                console.log(data);
+                if (!data.user) {
+                    alert('login invalido');
+                    return;
+                }
+                console.log(data);
+                localStorage.setItem('usuario', JSON.stringify(data.user));
+                alert(data);
+            })
+            .catch(err => console.log(err));
+    }
+
+    botaoLogin.addEventListener('click', doLogin);
+}
