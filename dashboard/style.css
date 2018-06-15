@@ -1,6 +1,9 @@
-body, html {
+
+
+/* body, html {
     padding: 0px;
     margin: 0px;
+    border: 0px;
     height: 100%;
 }
 header {
@@ -30,15 +33,7 @@ header {
     align-items: center;
     display: flex;
 }
-footer {
-    height: 9%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: darkgray;
-    border-top: 1px solid black;
-}
+
 button {
     border-radius: 50px;
     background-color: lightcoral;
@@ -80,4 +75,54 @@ button {
 .projeto > .projeto-dado{
     color: blueviolet;
     pointer-events: none;
+} */
+footer {
+    position:absolute;
+    bottom:0;
+    height: 57px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    opacity: 0.9;
+    border-top: 1px solid black;
+}
+header {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.label-titulo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end !important;
+}
+.container-projeto {
+    height: 500px;
+    width: 800px;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: column;
+    align-items: center;
+    background-color: darkseagreen;
+}
+.container {
+    height: 550px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    flex-flow: column;
+    align-items: center;
+    background-color: darkseagreen;
+}
+.label-add {
+    width: 99%;
+    display: flex;
+    justify-content: flex-end;
+    margin: 15px 0px;
+}
+.novo-projeto{
+    float: left!important;
 }
