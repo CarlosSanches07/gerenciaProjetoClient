@@ -3,34 +3,6 @@ body, html {
     margin: 0px;
     height: 100%;
 }
-.container {
-    display: flex;
-    height: 90%;
-    width: 90%;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.container-login {
-    height: 90%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-flow: column;
-    align-items: center;
-    background-color: darkseagreen;
-}
-
-.form {
-    display: flex;
-    flex-direction: column;
-    width: 20%;
-    justify-content: center;
-    align-items: space-between;
-}
-h2, h3 {
-    text-align: center;
-}
 footer {
     height: 10%;
     width: 100%;
@@ -51,6 +23,30 @@ header {
     align-items: center;
     background-color: darkgray;
 }
+.container {
+    display: flex;
+    height: 90%;
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.container-login {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-flow: column;
+    align-items: center;
+    background-color: darkseagreen;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    justify-content: center;
+    align-items: space-between;
+}
 .label-login {
     width: 50%;
     height: 13%;
@@ -60,10 +56,13 @@ header {
     height: 13%;
 }
 input {
+    margin: 2% 0%;
+    height: 20px;
+}
+#login-register {
     margin: 5% 0%;
     height: 20px;
 }
-#login-button {
-    margin: 5% 0%;
-    height: 20px;
+h4 {
+    margin: 0.5%;
 }
