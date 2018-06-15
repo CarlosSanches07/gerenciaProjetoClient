@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="Front.css">
+    <link rel="stylesheet" href="style.css">
     <title>Gerenciador de Projetos</title>
 </head>
 
@@ -15,7 +15,7 @@
             <h1>Gerenciador de Projetos</h1>
         </div>
         <div class="label-logoff">
-            <button>Login</button>
+            <button id="botao-logoff">Login</button>
         </div>
     </header>
     <div class="container">
@@ -24,12 +24,38 @@
         </div>
         <div class="container-projeto"></div>
         <div class="label-add">
-            <button>+</button>
+            <button id="botao-add">+</button>
         </div>
-    </div>  
+    </div>
     <footer>
         <h4>Gerenciador de Projetos</h4>
     </footer>
+    <dialog close id="add-dialog">
+        <div class="novo-projeto">
+            <div>
+                <span>Novo Projeto</span>
+            </div>
+            <div>
+                <span>Nome</span>
+                <input class="add-proj-inp" id="proj-nome"type="text">
+            </div>
+            <div>
+                <span>Descricao</span>
+                <textarea class="add-proj-inp" id="proj-desc"type="text"></textarea>
+            </div>
+            <div>
+                <span>Data Inicio</span>
+                <input class="add-proj-inp" id="proj-data-ini"type="date">
+            </div>
+            <div>
+                <span>Data Fim</span>
+                <input class="add-proj-inp" id="proj-data-fim"type="date">
+            </div>
+            <button id="salvar-projeto">Salvar</button>
+            <button id="fecha-dialog">Cancelar</button>
+        </div>
+    </dialog>
+    <script src="main.js"></script>
 </body>
 
 </html>
