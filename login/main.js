@@ -21,14 +21,12 @@ window.onload = function () {
         })
             .then(res => res.json())
             .then((data) => {
-                console.log(data);
                 if (!data.user) {
                     alert('login invalido');
                     return;
                 }
-                console.log(data);
                 localStorage.setItem('usuario', JSON.stringify(data.user));
-                alert(data);
+                window.location.assign('../dashboard/dashboard.html');
             })
             .catch(err => console.log(err));
     }

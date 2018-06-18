@@ -2,10 +2,12 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+    <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
+    <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <script src="main.js"></script>
     <title>Gerenciador de Projetos</title>
 </head>
@@ -15,33 +17,28 @@
         <div class="label-titulo">
             <h1>Gerenciador de Projetos</h1>
         </div>
-        <div class="label-logoff">
-            <button id="botao-logoff">Login</button>
-        </div>
     </header>
     <div class="container-login">
         <div class="container">
             <div class="label-login">
-                <h2>Novo Registro</h2>
+                <span>Novo Registro</span>
             </div>
-            <form class="form">
-                <h4>Nome</h4>
-                <input class="label-input" type="text" placeholder="">
-                <h4>E-mail</h4>
-                <input clas="label-input" type="email" placeholder="">
-                <h4>Login</h4>
-                <input clas="label-input" type="text" placeholder="">
-                <h4>Senha</h4>
-                <input clas="label-input" type="password" placeholder="">
-                <h4>Digite a senha novamente</h4>
-                <input clas="label-input" type="password" placeholder="">
-                <button type="submit" id="login-register">Registrar</button>
-            </form>
+            <div class="form">
+                <input class="input label-input text-input text-input--material" id="inp-nome" type="text" placeholder="Nome" required>
+                <input class="input label-input text-input text-input--material" id="inp-email" type="email" placeholder="Email" required>
+                <input class="input label-input text-input text-input--material" id="inp-login" type="text" placeholder="Login" required>
+                <input class="input label-input text-input text-input--material" id="inp-senha" type="password" placeholder="Senha" required>
+                <input class="input label-input text-input text-input--material" id="inp-senha-again" type="password" placeholder="Senha Novamente" required>
+                <button id="login-register" class="btn-reg button">Registrar</button>
+                <p id="form-untouched">* preencha todos os campos</p>
+                <a href="../login/login.html">Voltar</a>
+            </div>
         </div>
     </div>
     <footer>
-        <h4>Gerenciador de Projetos</h4>
+        <p>Gerenciador de Projetos</p>
     </footer>
+    <script src="main.js"></script>
 </body>
 
 </html>

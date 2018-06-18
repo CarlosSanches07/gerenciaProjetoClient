@@ -2,6 +2,7 @@ body, html {
     padding: 0px;
     margin: 0px;
     height: 100%;
+    font-family: 'Montserrat', sans-serif;
 }
 .container {
     display: flex;
@@ -18,7 +19,7 @@ body, html {
     justify-content: center;
     flex-flow: column;
     align-items: center;
-    background-color: darkseagreen;
+    background-color: #f0f0f0;
 }
 
 .form {
@@ -37,9 +38,15 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: darkgray;
-    border-top: 1px solid black;
+    background-color: black;
+    border-top: 1px solid white;
+    border-bottom: 1px solid #a3a3a3;
 }
+
+footer p {
+    color: white;
+}
+
 header {
     height: 10%;
     border-bottom-left-radius: 5px;
@@ -49,7 +56,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: darkgray;
+    background-color: darkgrey;
 }
 .label-login {
     width: 50%;
@@ -60,12 +67,12 @@ header {
     height: 13%;
 }
 input {
-    margin: 5% 0%;
-    height: 20px;
+    margin: 10px 10px;
+    height: 48px !important;
 }
 #login-button {
     margin: 5% 0%;
-    height: 20px;
+    height: 40px;
 }
 .label-logoff {
     width: 40%;
@@ -76,5 +83,18 @@ input {
 .label-titulo {
     width: 69%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+}
+
+.label-titulo h1 {
+    font-size: 28px;
+}
+
+.container-login h2{
+    font-size: 24px;
+}
+
+.add-proj-inp {
+    height: 15px;
+    margin: 8px;
 }

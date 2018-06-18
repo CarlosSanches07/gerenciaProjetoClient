@@ -7,6 +7,10 @@
     <title>GerenciaProjeto</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+    <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
+    <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <script src="main.js"></script>
 </head>
 
@@ -15,24 +19,19 @@
         <div class="label-titulo">
             <h1>Gerenciador de Projetos</h1>
         </div>
-        <div class="label-logoff">
-            <button id="botao-logoff">Login</button>
-        </div>
     </header>
     <div class="container-login">
         <div class="container">
             <h2>Login</h2>
             <div class="form">
-                <input id="login" type="text" placeholder="Username">
-                <input id="password" type="password" placeholder="Password">
-                <button id="login-button">Login</button>
+                <input id="login" class="text-input text-input--material" type="text" placeholder="Username">
+                <input id="password" class="text-input text-input--material" type="password" placeholder="Password">
+                <button id="login-button" class="button">Login</button>
             </div>
-            <h3>
-                <a href="../registro/registro.html"> or Register</a>
-            </h3>
+            <a class="registro" href="../registro/registro.html"> ou Registre-se</a>
         </div>
         <footer>
-            <h4>Gerenciador de Projetos</h4>
+            <p>Gerenciador de Projetos</p>
         </footer>
         <script src="main.js"></script>
 </body>
