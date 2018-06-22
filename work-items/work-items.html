@@ -4,9 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+    <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <title>Gerenciador de Projetos</title>
 </head>
 
@@ -16,54 +18,54 @@
             <h1>Gerenciador de Projetos</h1>
         </div>
         <div class="label-logoff">
-            <button type="button" class="btn btn-outline-dark">LOGIN</button>
+            <button type="button" id="btn-logoff" class="btn btn-outline-dark">LOGIN</button>
         </div>
     </header>
     <div class="container">
-        <div class="container-fazer">
-            <h4>Projetos a fazer</h4>
+        <div class="tarefa-column container-fazer scroll4">
+            <h4>Tarefas à fazer</h4>
         </div>
-        <div class="container-fazendo">
-            <h4>Projetos em andamento</h4>
+        <div class="tarefa-column container-fazendo scroll4">
+            <h4>Tarefas em andamento</h4>
         </div>
-        <div class="container-concluido">
-            <h4>Projetos concluídos</h4>
+        <div class="tarefa-column container-concluido scroll4">
+            <h4>Tarefas concluídas</h4>
         </div>
         <div class="label-add">
             <button type="button" class="btn btn-outline-dark" id="botao-add">+</button>
         </div>
     </div>
+    </div>
     <dialog close id="add-dialog">
-            <div class="novo-projeto">
-                <div>
-                    <span>Nova Tarefa</span>
-                </div>
-                <div>
-                    <span>Nome</span>
-                    <input class="add-proj-inp" id="proj-nome"type="text">
-                </div>
-                <div>
-                    <span>Descricao</span>
-                    <textarea class="add-proj-inp" id="proj-desc"type="text"></textarea>
-                </div>
-                <div>
-                    <span>Data Inicio</span>
-                    <input class="add-proj-inp" id="proj-data-ini"type="date">
-                </div>
-                <div>
-                    <span>Data Fim</span>
-                    <input class="add-proj-inp" id="proj-data-fim"type="date">
-                </div>
-                <button id="salvar-projeto">Salvar</button>
-                <button id="fecha-dialog">Cancelar</button>
+        <div class="novo-projeto">
+            <div>
+                <span>Nova Tarefa</span>
             </div>
-        </dialog>
+            <div>
+                <span>Nome</span>
+                <input class="add-task-inp" id="tarefa-nome" type="text">
+            </div>
+            <div>
+                <span>Descricao</span>
+                <textarea class="add-task-inp" id="tarefa-desc" type="text"></textarea>
+            </div>
+            <button id="salvar-tarefa">Salvar</button>
+            <button id="fecha-dialog">Cancelar</button>
+        </div>
+    </dialog>
+    <dialog close id='dialog-tarefa'>
+    </dialog>
     <footer>
         <h4>Gerenciador de Projetos</h4>
     </footer>
 </body>
 <script src="main.js"></script>
-<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script> -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+<script src="http://code.jquery.com/jquery-3.3.1.min.js" crossorigin="anonymous"></script>
+
 </html>

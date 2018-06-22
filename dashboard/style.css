@@ -1,6 +1,9 @@
+
+
 body, html {
     padding: 0px;
     margin: 0px;
+    border: 0px;
     height: 100%;
     font-family: 'Montserrat', sans-serif;
 }
@@ -50,7 +53,6 @@ footer p {
     color: white;
 }
 
-
 button {
     border-radius: 50px;
     background-color: lightcoral;
@@ -87,8 +89,7 @@ button {
     margin: 0px 5px; 
 }
 
-.projeto > .projeto-dado{
-    color: blueviolet;
+.projetos div{
     pointer-events: none;
     text-decoration: none;
 }

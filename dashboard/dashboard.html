@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
     <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
     <title>Gerenciador de Projetos</title>
 </head>
 
@@ -40,25 +41,24 @@
                 <span>Novo Projeto</span>
             </div>
             <div></div>
-                <input class="add-proj-inp text-input text-input --material" placeholder="Nome" id="proj-nome" type="text">
-            </div>
-            <div>
-                <textarea class="add-proj-inp textarea textarea --transparent" placeholder="Descrição" id="proj-desc"type="text"></textarea>
-            </div>
-            <div>
-                <span>Data Inicio</span>
-                <input class="add-proj-inp" id="proj-data-ini"type="date">
-            </div>
-            <div>
-                <span>Data Fim</span>
-                <input class="add-proj-inp" id="proj-data-fim"type="date">
-            </div>
-            <button id="salvar-projeto" class="button">Salvar</button>
-            <button id="fecha-dialog" class="button">Cancelar</button>
+            <input class="add-proj-inp text-input text-input --material" placeholder="Nome" id="proj-nome" type="text">
+        </div>
+        <div>
+            <textarea class="add-proj-inp textarea textarea --transparent" placeholder="Descrição" id="proj-desc" type="text"></textarea>
+        </div>
+        <div>
+            <span>Data Inicio</span>
+            <input class="add-proj-inp" id="proj-data-ini" type="date">
+        </div>
+        <div>
+            <span>Data Fim</span>
+            <input class="add-proj-inp" id="proj-data-fim" type="date">
+        </div>
+        <button id="salvar-projeto" class="button">Salvar</button>
+        <button id="fecha-dialog" class="button">Cancelar</button>
         </div>
         <p class="form-untouched" id="form-required">* preencha todos os campos</p>
     </dialog>
     <script src="main.js"></script>
-</body>
 
 </html>

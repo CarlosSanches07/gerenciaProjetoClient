@@ -30,14 +30,15 @@ const buildProjects = function () {
     const url = `${apiUrl}/project?project=${pessoa.pessoaid}`;
     fetch(url)
         .then(res => res.json())
-        .then((data) => {
+        .then( async (data) => {
             /* 
                 Criação dinâmica da página
              */
             const containerProjetos = document.getElementsByClassName('container-projeto');
             containerProjetos[0].innerHTML = "";
-            data.projects.forEach(item => containerProjetos[0].innerHTML += containerProjetosBuilder(item));
-            projetos = Array.from(document.getElementsByClassName('projeto'));
+            await data.projects.forEach(item => containerProjetos[0].innerHTML += containerProjetosBuilder(item));
+            projetos = Array.from(document.getElementsByClassName('projetos'));
+            console.log(projetos)
             projetos.forEach(item => item.addEventListener('click', salvaId));
         }).catch(err => {
             console.log(err);
@@ -51,10 +52,9 @@ const checkLogin = function () {
 const containerProjetosBuilder = function (data) {
     const nome = `<div class="projeto-dado projeto-nome"><h3>${data.nome}</h3></div>`;
     const descricao = `<div class="projeto-dado projeto-descricao"><p>${data.descricao}<p/></div>`;
-    const div = `<div data-id="${data.projetoid}" class="card">
-                    <a href="../work-items/work-items.html" class="projeto-dado">
-                        ${nome}${descricao}
-                    </a>
+    const div = `<div data-id="${data.projetoid}" class="card projetos">
+                    ${nome}
+                    ${descricao}
                 </div>`;
     return div;
 }
@@ -110,6 +110,7 @@ const salvarProjeto = function () {
 
 const salvaId = function(event) {
     const projetoId = event.srcElement.dataset.id;
+    console.log(projetoId);
     localStorage.setItem('projetoId', projetoId);
     window.location.assign('../work-items/work-items.html');
 }
