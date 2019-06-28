@@ -29,7 +29,7 @@ const buildTarefas = function () {
     const url = `${apiUrl}/task?ProjetoId=${projectId}`;
     fetch(url)
         .then(res => res.json())
-        .then(async (data) => {
+        .then( async (data) => {
             /* 
                 Criação dinâmica da página
             */

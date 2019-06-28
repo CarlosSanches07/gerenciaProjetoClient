@@ -1,7 +1,7 @@
 window.onload = function () {
 
     const botaoLogin = document.getElementById('login-button');
-
+    const botaoRegistro = document.getElementById('registro');
     const doLogin = function () {
         const login = document.getElementById('login').value;
         const password = document.getElementById('password').value;
@@ -31,5 +31,10 @@ window.onload = function () {
             .catch(err => console.log(err));
     }
 
+    const registroClick = function() {
+        window.location.assign("../registro/registro.html");
+    }
+
     botaoLogin.addEventListener('click', doLogin);
+    botaoRegistro.addEventListener('click', registroClick);
 }

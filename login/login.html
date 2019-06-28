@@ -6,33 +6,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>GerenciaProjeto</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
-    <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsenui.css">
     <link rel="stylesheet" href="https://unpkg.com/onsenui/css/onsen-css-components.min.css">
-    <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script>
+    <script src="https://unpkg.com/onsenui/js/onsenui.min.js"></script> -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
     <script src="main.js"></script>
 </head>
 
 <body>
-    <header>
+    <!-- <header>
         <div class="label-titulo">
             <h1>Gerenciador de Projetos</h1>
         </div>
-    </header>
-    <div class="container-login">
-        <div class="container">
-            <h2>Login</h2>
-            <div class="form">
-                <input id="login" class="text-input text-input--material" type="text" placeholder="Username">
-                <input id="password" class="text-input text-input--material" type="password" placeholder="Password">
-                <button id="login-button" class="button">Login</button>
+    </header> -->
+    <div class="container-fluid fill">
+        <div class="row justify-content-md-center fill">
+            <div class="col-6 align-self-center justify-content-md-end">
+                <h2>O GerenciaProjeto</h2>
+                <h3>permite trabalhar com mais colaboração e ter mais produtividade. </h3>
+                <h4>Ajudando a visualizar seus projetos em pequenas tarefas,
+                     de forma organizada e simples, o GerenciaProjeto procura
+                    agilizar todos os processos realizados durante o desenvolvimento do seu projeto.</h4>
+                <button id="registro" class="btn btn-success btn-block">Comece agora !!!</button>
             </div>
-            <a class="registro" href="../registro/registro.html"> ou Registre-se</a>
+            <div class="offset-md-2 col-md-4 align-self-center">
+                <div class="">
+                    <h4 class="">Login</h4>
+                    <div class="form-group">
+                        <input id="login" class="form-control" type="text" placeholder="Username">
+                    </div>
+                    <div class="form-group">
+                        <input id="password" class="form-control" type="password" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <button id="login-button" class="btn btn-primary">Login</button>
+                    </div>    
+                </div>
+            </div>
         </div>
-        <footer>
+    </div>
+        <!-- <footer>
             <p>Gerenciador de Projetos</p>
-        </footer>
+        </footer> -->
         <script src="main.js"></script>
 </body>
 

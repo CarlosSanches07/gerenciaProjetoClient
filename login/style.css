@@ -4,35 +4,51 @@ body, html {
     height: 100%;
     font-family: 'Montserrat', sans-serif;
 }
-.container {
+
+ h1,h3,h4,h5,h6 {
+    text-align: justify;
+}
+
+h2 {
+    text-align: center;
+}
+
+#registro {
+    font-size: x-large;
+}
+/* .container {
     display: flex;
     height: 90%;
     width: 90%;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+} */
+.fill {
+    height: 100%;
+    min-height: 100%
 }
-.container-login {
-    height: 90%;
+.container-fluid{
+    /* height: 90%;
     width: 100%;
     display: flex;
     justify-content: center;
     flex-flow: column;
-    align-items: center;
-    background-color: #f0f0f0;
+    align-items: center; */
+    background: linear-gradient(135deg, #0079BF, #5067C5);;
 }
 
-.form {
+.card {
+    background: rgba(0, 0, 0, .1)
+}
+
+/* .form {
     display: flex;
     flex-direction: column;
-    width: 20%;
     justify-content: center;
     align-items: space-between;
-}
-h2, h3 {
-    text-align: center;
-}
-footer {
+} */
+/* footer {
     height: 10%;
     width: 100%;
     display: flex;
@@ -45,9 +61,9 @@ footer {
 
 footer p {
     color: white;
-}
+} */
 
-header {
+/* header {
     height: 10%;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -57,7 +73,7 @@ header {
     justify-content: center;
     align-items: center;
     background-color: darkgrey;
-}
+} */
 .label-login {
     width: 50%;
     height: 13%;
@@ -66,21 +82,21 @@ header {
     width: 50%;
     height: 13%;
 }
-input {
+/* input {
     margin: 10px 10px;
     height: 48px !important;
-}
-#login-button {
+} */
+/* #login-button {
     margin: 5% 0%;
     height: 40px;
-}
+} */
 .label-logoff {
     width: 40%;
     padding-right: 15px;
     display: flex;
     justify-content: flex-end;
 }
-.label-titulo {
+/* .label-titulo {
     width: 69%;
     display: flex;
     justify-content: center;
@@ -88,13 +104,13 @@ input {
 
 .label-titulo h1 {
     font-size: 28px;
-}
+} */
 
-.container-login h2{
+/* .container-login h2{
     font-size: 24px;
-}
+} */
 
-.add-proj-inp {
+/* .add-proj-inp {
     height: 8px;
     margin: 8px;
-}
+} */
