@@ -5,6 +5,7 @@ window.onload = function () {
     */
     if (checkLogin()) {
         buildTarefas();
+        getUsers();
     }
     /* 
         Eventos dos botões
@@ -23,9 +24,34 @@ window.onload = function () {
 
 }
 
+let users = [];
+let usersProject = [];
+
+const getUsers = async function() {
+    await fetch(`${apiUrl}/user`)
+        .then(res => res.json())
+        .then((data) => {
+            users = data.data;
+            getUsersByProjectId();
+        })
+}
+
+const getUsersByProjectId = async function() {
+    const projectId = JSON.parse(localStorage.getItem('projetoId'));
+    const url = `${apiUrl}/project/user?projetoid=${projectId}`;
+    await fetch(url)
+        .then(res => res.json())
+        .then((data) => {
+            console.log(users)
+            usersProject = users.filter((f) => {
+                return data.users.some(s => s.pessoaid == f.pessoaid);
+            })
+        })
+    console.log(usersProject)
+}
+
 const buildTarefas = function () {
     const projectId = JSON.parse(localStorage.getItem('projetoId'));
-    console.log(projectId);
     const url = `${apiUrl}/task?ProjetoId=${projectId}`;
     fetch(url)
         .then(res => res.json())
@@ -83,7 +109,8 @@ const addClick = function () {
 }
 
 const logoffClick = function () {
-    console.log('botao logoff funcionando');
+    localStorage.clear();
+    window.location.assign('../login/login.html');
 }
 
 const fechaDialog = function () {
